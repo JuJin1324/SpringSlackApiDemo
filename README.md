@@ -1,7 +1,5 @@
 # SpringSlackApiDemo
-
-## 개요
-* SpringBoot 2.0 에서 spring-boot-starter-webflux : WebClient를 통해서 Slack API 호출하는 샘플 코드
+SpringBoot 2.0 에서 spring-boot-starter-webflux : WebClient를 통해서 Slack API 호출하는 샘플 코드
 
 ## Slack API Doc Site
 * https://api.slack.com/docs/
