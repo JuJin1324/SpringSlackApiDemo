@@ -8,7 +8,7 @@ SpringBoot 2.0 에서 spring-boot-starter-webflux : WebClient를 통해서 Slack
 * https://api.slack.com/custom-integrations/legacy-tokens
 
 ## Maven
-```
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-webflux</artifactId>
