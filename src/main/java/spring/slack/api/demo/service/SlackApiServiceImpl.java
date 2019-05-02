@@ -16,7 +16,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Service
 @Slf4j
 public class SlackApiServiceImpl implements SlackApiService {
-    private final static String apiAddr = "https://slack.com/api/files.upload";
+    private final static String apiAddr = "https://slack.com/api";
     private WebClient webClient;
 
     @Value("${slack.api.token}")
@@ -39,6 +39,7 @@ public class SlackApiServiceImpl implements SlackApiService {
             params.add("channels", channels);
 
             webClient.post()
+                    .uri("/files.upload")
                     .contentType(MediaType.MULTIPART_FORM_DATA)
                     .syncBody(params)
                     .exchange()
